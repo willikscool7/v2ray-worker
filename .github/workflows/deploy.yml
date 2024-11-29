@@ -18,7 +18,7 @@ jobs:
         cache: "npm"
 
     - name: Install modules
-      run: npm i wrangler@latest
+      run: npm install @cloudflare/wrangler --global
 
     - name: Build
       run: npx wrangler build
